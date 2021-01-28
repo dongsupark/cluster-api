@@ -5861,7 +5861,7 @@ spec:
         - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=false},ClusterResourceSet=${EXP_CLUSTER_RESOURCE_SET:=false}
         command:
         - /manager
-        image: quay.io/dongsupark/cluster-api-controller-amd64:dev
+        image: quay.io/dongsupark/cluster-api-controller-amd64:dev2021
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
@@ -5918,7 +5918,7 @@ spec:
         - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=false},ClusterResourceSet=${EXP_CLUSTER_RESOURCE_SET:=false}
         command:
         - /manager
-        image: quay.io/dongsupark/cluster-api-controller-amd64:dev
+        image: quay.io/dongsupark/cluster-api-controller-amd64:dev2021
         imagePullPolicy: Always
         livenessProbe:
           httpGet:

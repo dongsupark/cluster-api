@@ -1048,7 +1048,7 @@ spec:
           metadata:
             type: object
           spec:
-            description: KubeadmConfigSpec defines the desired state of KubeadmConfig.
+            description: KubeadmIgnitionConfigSpec defines the desired state of KubeadmIgnitionConfig.
               Either ClusterConfiguration and InitConfiguration should be defined
               or the JoinConfiguration should be defined.
             properties:
@@ -4259,7 +4259,7 @@ spec:
         - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=false}
         command:
         - /manager
-        image: quay.io/dongsupark/kubeadm-bootstrap-controller-amd64:dev
+        image: quay.io/dongsupark/kubeadm-bootstrap-controller-amd64:dev2021
         imagePullPolicy: Always
         name: manager
       terminationGracePeriodSeconds: 10
@@ -4304,7 +4304,7 @@ spec:
         - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=false}
         command:
         - /manager
-        image: quay.io/dongsupark/kubeadm-bootstrap-controller-amd64:dev
+        image: quay.io/dongsupark/kubeadm-bootstrap-controller-amd64:dev2021
         imagePullPolicy: Always
         name: manager
         ports:
