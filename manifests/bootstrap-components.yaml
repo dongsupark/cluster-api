@@ -4259,7 +4259,7 @@ spec:
         - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=false}
         command:
         - /manager
-        image: quay.io/dongsupark/kubeadm-bootstrap-controller-amd64:dev2021
+        image: quay.io/dongsupark/kubeadm-bootstrap-controller-amd64:dev
         imagePullPolicy: Always
         name: manager
       terminationGracePeriodSeconds: 10
@@ -4304,7 +4304,7 @@ spec:
         - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=false}
         command:
         - /manager
-        image: quay.io/dongsupark/kubeadm-bootstrap-controller-amd64:dev2021
+        image: quay.io/dongsupark/kubeadm-bootstrap-controller-amd64:dev
         imagePullPolicy: Always
         name: manager
         ports:
