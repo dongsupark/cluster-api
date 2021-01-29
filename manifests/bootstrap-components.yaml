@@ -1048,7 +1048,7 @@ spec:
           metadata:
             type: object
           spec:
-            description: KubeadmIgnitionConfigSpec defines the desired state of KubeadmIgnitionConfig.
+            description: KubeadmConfigSpec defines the desired state of KubeadmConfig.
               Either ClusterConfiguration and InitConfiguration should be defined
               or the JoinConfiguration should be defined.
             properties:
