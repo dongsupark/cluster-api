@@ -5856,8 +5856,8 @@ spec:
         - containerPort: 8443
           name: https
       - args:
-        - --metrics-bind-addr=127.0.0.1:8080
-        - --leader-elect
+        - --metrics-addr=127.0.0.1:8080
+        - --enable-leader-election
         - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=false},ClusterResourceSet=${EXP_CLUSTER_RESOURCE_SET:=false}
         command:
         - /manager
@@ -5913,7 +5913,7 @@ spec:
         - containerPort: 8443
           name: https
       - args:
-        - --metrics-bind-addr=127.0.0.1:8080
+        - --metrics-addr=127.0.0.1:8080
         - --webhook-port=9443
         - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=false},ClusterResourceSet=${EXP_CLUSTER_RESOURCE_SET:=false}
         command:
@@ -10397,8 +10397,8 @@ spec:
         - containerPort: 8443
           name: https
       - args:
-        - --metrics-bind-addr=127.0.0.1:8080
-        - --leader-elect
+        - --metrics-addr=127.0.0.1:8080
+        - --enable-leader-election
         - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=false}
         command:
         - /manager
@@ -10442,7 +10442,7 @@ spec:
         - containerPort: 8443
           name: https
       - args:
-        - --metrics-bind-addr=127.0.0.1:8080
+        - --metrics-addr=127.0.0.1:8080
         - --webhook-port=9443
         - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=false}
         command:
@@ -13163,8 +13163,8 @@ spec:
         - containerPort: 8443
           name: https
       - args:
-        - --metrics-bind-addr=127.0.0.1:8080
-        - --leader-elect
+        - --metrics-addr=127.0.0.1:8080
+        - --enable-leader-election
         command:
         - /manager
         image: quay.io/dongsupark/kubeadm-control-plane-controller-amd64:dev2021
@@ -13207,7 +13207,7 @@ spec:
         - containerPort: 8443
           name: https
       - args:
-        - --metrics-bind-addr=127.0.0.1:8080
+        - --metrics-addr=127.0.0.1:8080
         - --webhook-port=9443
         command:
         - /manager
